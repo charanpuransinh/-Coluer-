@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { background: #0c1014; color: #e8f0ff; font-family: sans-serif; display: flex; justify-content: center; padding: 20px; }
+        .box { border: 2px solid #00d4ff; border-radius: 15px; padding: 20px; width: 350px; background: #1a2a3a; box-shadow: 0 0 20px rgba(0,212,255,0.2); }
+        h2 { color: #ffd600; text-align: center; border-bottom: 1px solid #444; padding-bottom: 10px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+        .item { background: #000; padding: 10px; border-radius: 8px; text-align: center; border: 1px solid #333; }
+        .label { font-size: 10px; color: #888; text-transform: uppercase; }
+        .val { font-weight: bold; color: #00ff88; margin-top: 5px; }
+        .btn { margin-top: 20px; padding: 15px; background: #ff7b00; border: none; border-radius: 5px; width: 100%; font-weight: bold; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>स्मार्ट कंट्रोल पैनल</h2>
+    <div class="grid">
+        <div class="item"><div class="label">वोल्टेज</div><div class="val">230V OK</div></div>
+        <div class="item"><div class="label">तापमान</div><div class="val">29°C</div></div>
+        <div class="item"><div class="label">आर्द्रता (Humidity)</div><div class="val">65%</div></div>
+        <div class="item"><div class="label">पंप स्टेटस</div><div class="val">AUTO</div></div>
+    </div>
+    
+    <div style="margin-top:20px; border: 1px solid #555; padding: 10px; border-radius: 8px;">
+        <p><strong>इनपुट:</strong> 80V-260V AC</p>
+        <p><strong>आउटपुट:</strong> फैन + पंप (थर्मल ट्रिप रेडी)</p>
+    </div>
+
+    <button class="btn">सिस्टम टेस्ट चालू करें</button>
+</div>
+
+</body>
+</html>
