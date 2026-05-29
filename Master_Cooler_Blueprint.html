@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>Master Cooler Control Blueprint</title>
+    <style>
+        body { background: #0c1014; color: #fff; font-family: sans-serif; padding: 20px; }
+        .main-container { max-width: 600px; margin: auto; border: 3px solid #00d4ff; padding: 20px; border-radius: 15px; background: #1a2a3a; }
+        h1, h2 { color: #ffd600; text-align: center; }
+        .section { border-bottom: 2px solid #555; padding: 15px 0; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #444; padding: 10px; }
+        th { background: #2c3e50; }
+        .wiring-flow { background: #000; padding: 15px; border-radius: 10px; border: 2px dashed #00ff88; color: #00ff88; text-align: center; }
+    </style>
+</head>
+<body>
+
+<div class="main-container">
+    <h1>कूलर कंट्रोल पैनल: मास्टर ब्लूप्रिंट</h1>
+
+    <div class="section">
+        <h2>1. जरूरी सामान की सूची (Checklist)</h2>
+        <table>
+            <tr><th>सामान</th><th>उपयोग</th></tr>
+            <tr><td>IP65 बॉक्स (12x10)</td><td>मुख्य सुरक्षा कवच</td></tr>
+            <tr><td>V-Guard स्टेबलाइजर</td><td>वोल्टेज रेगुलेशन</td></tr>
+            <tr><td>4-Channel रिमोट</td><td>पंप/फैन कंट्रोल</td></tr>
+            <tr><td>थर्मल रिले</td><td>मोटर सुरक्षा</td></tr>
+            <tr><td>PVC माउंटिंग प्लेट</td><td>सामान कसने हेतु</td></tr>
+            <tr><td>1.5mm कॉपर वायर</td><td>वायरिंग कनेक्शन</td></tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>2. अंदरूनी लेआउट (Layout Plan)</h2>
+        <p><strong>एक ही लेयर में फिटिंग (Left to Right):</strong></p>
+        <ul>
+            <li><strong>बायां:</strong> स्टेबलाइजर (ऊपर की तरफ)</li>
+            <li><strong>बीच:</strong> रिमोट बोर्ड + थर्मल रिले</li>
+            <li><strong>दायां:</strong> टर्मिनल ब्लॉक पट्टी (कनेक्शन हेतु)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. वायरिंग फ्लो (Step-by-Step)</h2>
+        <div class="wiring-flow">
+            मेन पावर → रोटरी स्विच → स्टेबलाइजर → टर्मिनल ब्लॉक → थर्मल रिले → मोटर/पंप
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. असेंबली निर्देश</h2>
+        <ol>
+            <li>पहले PVC प्लेट पर सारा सामान DIN Rail के जरिए कस लें।</li>
+            <li>बॉक्स के अंदर 4 स्क्रू से प्लेट को फिक्स करें।</li>
+            <li>नीचे की तरफ 2 रबर ग्लैंड्स लगाएं ताकि पानी न जाए।</li>
+            <li>पूरी बॉडी को अर्थिंग (हरा तार) से जोड़ना न भूलें।</li>
+        </ol>
+    </div>
+</div>
+
+</body>
+</html>
